@@ -21,7 +21,7 @@ class C_Page extends C_Base {
 		$user = $mUsers->Get();
 
 		if ($user == NULL)
-			header("Location: /vcompacte/login");
+			header("Location: /login");
 
 
 		if($this->IsPost()){
@@ -47,7 +47,7 @@ class C_Page extends C_Base {
 		$user = $mUsers->Get();
 
 		if ($user == NULL)
-			header("Location: /vcompacte/login");
+			header("Location: /login");
 
 
 		$all_users = $mUsers->listUsers();

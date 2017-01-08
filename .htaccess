@@ -2,7 +2,7 @@
 RewriteEngine On
 
 # Путь до корня сайта
-RewriteBase /vcompacte/
+RewriteBase /
 
 # Исключения – адреса, которые не нужно переписывать
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -26,7 +26,7 @@ class C_Login extends C_Base {
 			if ($mUsers->Login($_POST['login'], 
 			                   $_POST['password'], 
 							   isset($_POST['remember']))) {
-				header('Location: /vcompacte/page');
+				header('Location: /page');
 				die();
 			} else {
 				echo "Пользователя не существует! Либо не правильно введены логин и пароль";
@@ -49,7 +49,7 @@ class C_Login extends C_Base {
 		// Обработка отправки формы.
 		if ($this->IsPost()) {
 			if ($mUsers->Registration($_POST['r_name'], $_POST['r_login'], $_POST['r_password'], $_POST['r_confirm_password'])) {
-				header('Location: /vcompacte/login');
+				header('Location: /login');
 				die();
 			} else {
 				echo "Ошибка! Что-то пошло не так! Придумайте другой логин либо правильно заполните подтверждение пароля";
