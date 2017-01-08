@@ -1,5 +1,5 @@
 <?
-define('FPATH', '/vcompacte/');
+define('FPATH', '/');
 
 function l($url){
 	return FPATH.$url;
